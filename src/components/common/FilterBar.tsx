@@ -30,11 +30,11 @@ export function FilterBar({ filters, onFiltersChange }: FilterBarProps) {
     { value: undefined, label: '동 전체' },
   ]
 
-  const sortOptions = [
-    { value: 'latest', label: '최신순' },
-    { value: 'deadline', label: '마감 임박' },
-    { value: 'distance', label: '거리순' },
-  ]
+const sortOptions: { value: 'latest' | 'deadline' | 'distance'; label: string }[] = [
+  { value: 'latest', label: '최신순' },
+  { value: 'deadline', label: '마감 임박' },
+  { value: 'distance', label: '거리순' },
+]
 
   return (
     <div className="bg-white rounded-lg shadow-sm p-4 space-y-4">
